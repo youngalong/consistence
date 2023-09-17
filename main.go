@@ -1,8 +1,12 @@
 // Package main @Author: youngalone [2023/9/17]
 package main
 
-import "fmt"
+import (
+	"consistence/config"
+	"consistence/database/mysql"
+)
 
 func main() {
-	fmt.Println("hello world")
+	config.Init()
+	mysql.Init()
 }
